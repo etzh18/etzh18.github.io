@@ -4,195 +4,118 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ethan Zhao</title>
-<meta name="description" content="Ethan Zhao: operations, research and building things. Director of Finance and Operations at Youth Economy Lab, founder of GoofProof.">
+<meta name="description" content="Ethan Zhao. Finance and operations, research, and a couple of small businesses.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#fbfaf7; --fg:#1c1b19; --muted:#5f5c55; --line:#e4e0d8; --accent:#1f5fa8; --card:#ffffff; --tag:#f0ede6;
-}
-@media (prefers-color-scheme: dark){
-  :root{ --bg:#141413; --fg:#ecebe7; --muted:#a3a097; --line:#2c2b28; --accent:#7fb1ee; --card:#1b1b19; --tag:#252421; }
+  --blau:#004d98;
+  --grana:#a50044;
+  --groc:#edbb00;
+  --ink:#1b1b1b;
+  --muted:#5a5a5a;
+  color-scheme: light;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 Inter,system-ui,-apple-system,Segoe UI,sans-serif;-webkit-font-smoothing:antialiased}
-a{color:var(--accent);text-decoration:none}
-a:hover{text-decoration:underline}
-.wrap{max-width:760px;margin:0 auto;padding:0 20px}
-nav{position:sticky;top:0;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:5}
-nav .wrap{display:flex;gap:18px;align-items:center;height:52px;overflow-x:auto;white-space:nowrap}
-nav .name{font-weight:600;color:var(--fg);margin-right:auto}
-nav a:not(.name){color:var(--muted);font-size:14px}
-header{padding:64px 0 32px}
-h1{font-family:"Source Serif 4",Georgia,serif;font-weight:600;font-size:44px;line-height:1.1;margin:0 0 14px;letter-spacing:-.01em}
-.lead{font-size:18px;color:var(--muted);max-width:620px;margin:0 0 22px}
-.links{display:flex;flex-wrap:wrap;gap:10px}
-.btn{display:inline-block;border:1px solid var(--line);background:var(--card);color:var(--fg);padding:8px 14px;border-radius:8px;font-size:14px;font-weight:500}
-.btn:hover{border-color:var(--accent);text-decoration:none}
-.btn.primary{background:var(--fg);color:var(--bg);border-color:var(--fg)}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:36px 0 8px}
-.stat{border:1px solid var(--line);background:var(--card);border-radius:10px;padding:14px}
-.stat b{display:block;font-family:"Source Serif 4",Georgia,serif;font-size:26px;font-weight:600}
-.stat span{font-size:13px;color:var(--muted)}
-section{padding:36px 0;border-top:1px solid var(--line)}
-h2{font-family:"Source Serif 4",Georgia,serif;font-weight:600;font-size:26px;margin:0 0 20px}
-.item{margin:0 0 28px}
-.item:last-child{margin-bottom:0}
-.top{display:flex;justify-content:space-between;gap:12px;align-items:baseline;flex-wrap:wrap}
-h3{font-size:17px;margin:0;font-weight:600}
-.when{font-size:14px;color:var(--muted)}
-.role{color:var(--muted);font-size:15px;margin:2px 0 8px}
-ul{margin:6px 0 0;padding-left:20px}
-li{margin:4px 0}
-.paper{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:20px;margin:0 0 18px}
-.paper .kicker{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:6px}
-.paper h3{font-family:"Source Serif 4",Georgia,serif;font-size:20px;line-height:1.3;margin-bottom:6px}
-.paper p{margin:8px 0}
-.nums{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
-.tag{background:var(--tag);border-radius:6px;padding:3px 9px;font-size:13px}
-.awards li b{font-weight:600}
-footer{padding:32px 0 56px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
-@media (max-width:600px){
-  h1{font-size:34px}
-  header{padding:40px 0 24px}
-  .stats{grid-template-columns:repeat(2,1fr)}
-  nav a.hide-sm{display:none}
+body{margin:0;background:#fff;color:var(--ink);font:17px/1.6 Georgia,"Times New Roman",serif}
+a{color:var(--blau)}
+a:hover{color:var(--grana)}
+.stripes{
+  background:repeating-linear-gradient(90deg,var(--blau) 0 52px,var(--grana) 52px 104px);
+  border-bottom:6px solid var(--groc);
+  padding:64px 20px 28px;
+}
+.stripes h1{
+  max-width:680px;margin:0 auto;
+  font-family:"Barlow Condensed","Arial Narrow",sans-serif;font-weight:700;
+  font-size:64px;line-height:1;color:#fff;letter-spacing:.01em;
+  text-shadow:0 2px 0 rgba(0,0,0,.35);
+}
+main{max-width:680px;margin:0 auto;padding:8px 20px 40px}
+.intro{margin:24px 0 8px}
+.contact{margin:0 0 8px;color:var(--muted)}
+h2{
+  font-family:"Barlow Condensed","Arial Narrow",sans-serif;font-weight:700;
+  font-size:30px;color:var(--grana);margin:40px 0 4px;
+  border-bottom:3px solid var(--blau);padding-bottom:2px;
+}
+h3{font-size:18px;margin:22px 0 0}
+.meta{color:var(--muted);font-size:15px;margin:0 0 4px}
+p{margin:0 0 8px}
+ul{padding-left:20px;margin:8px 0}
+li{margin:2px 0}
+footer{
+  max-width:680px;margin:0 auto;padding:16px 20px 40px;
+  color:var(--muted);font-size:15px;
+}
+.bar{height:10px;background:repeating-linear-gradient(90deg,var(--blau) 0 52px,var(--grana) 52px 104px)}
+@media (max-width:560px){
+  body{font-size:16px}
+  .stripes{padding:44px 16px 20px}
+  .stripes h1{font-size:48px}
+  main,footer{padding-left:16px;padding-right:16px}
 }
 </style>
 </head>
 <body>
-<nav><div class="wrap">
-  <a class="name" href="#">Ethan Zhao</a>
-  <a href="#research">Research</a>
-  <a href="#work">Work</a>
-  <a href="#projects">Projects</a>
-  <a class="hide-sm" href="#awards">Awards</a>
-  <a href="resume.pdf">Resume</a>
-</div></nav>
 
-<main class="wrap">
-<header>
-  <h1>Ethan Zhao</h1>
-  <p class="lead">I run finance and operations for a nonprofit with 8,000+ members, study how big events and new lenders affect local economies, and build software that tests games before launch. I'm a senior at Herricks High School in New York.</p>
-  <div class="links">
-    <a class="btn primary" href="resume.pdf">Resume (PDF)</a>
-    <span class="btn">zhaoethan1529 [at] gmail [dot] com</span>
-    <a class="btn" href="http://www.linkedin.com/in/ethan-zhao-89a9302ab">LinkedIn</a>
-    <a class="btn" href="https://github.com/etzh18">GitHub</a>
-  </div>
-  <div class="stats">
-    <div class="stat"><b>$30K</b><span>grants raised for Youth Economy Lab</span></div>
-    <div class="stat"><b>106</b><span>countries reached by YEL members</span></div>
-    <div class="stat"><b>$100K</b><span>student portfolio managed</span></div>
-    <div class="stat"><b>2</b><span>research papers</span></div>
-  </div>
-</header>
+<div class="stripes"><h1>Ethan Zhao</h1></div>
 
-<section id="research">
-  <h2>Research</h2>
+<main>
+  <p class="intro">I handle finance and operations at Youth Economy Lab, I research how big events and new kinds of lenders affect local economies, and I run a small photo and video business on Long Island. I'm a senior at Herricks High School and I'm looking for an operations role at an early-stage startup.</p>
+  <p class="contact">
+    <a href="resume.pdf">Resume (PDF)</a> &nbsp;|&nbsp;
+    <a href="http://www.linkedin.com/in/ethan-zhao-89a9302ab">LinkedIn</a> &nbsp;|&nbsp;
+    zhaoethan1529 [at] gmail [dot] com
+  </p>
 
-  <div class="paper">
-    <div class="kicker">Ongoing · Cornell University &amp; EXEA Labs · Sole author</div>
-    <h3>&ldquo;Messi&rdquo; Business: The Effect of Clean Zones, Crowds and Closures at the 2026 World Cup</h3>
-    <p>FIFA asked every 2026 World Cup host city to set up &ldquo;Clean Zones&rdquo; that limit signs and street vendors near stadiums and fan festivals. Business owners blamed the zones and the road closures for lost sales. I'm testing which one, if either, actually hurt them, across all 16 host cities.</p>
-    <p><b>Early results:</b> the zone rules did not measurably cut sales. Crowds and spending went up. Where owners did report losses, news coverage tied them to closures and parking bans, not the zone rules.</p>
-    <div class="nums">
-      <span class="tag">16 host cities</span>
-      <span class="tag">1,310 Texas bars geocoded</span>
-      <span class="tag">Boston Fan Fest bike trips +19% (p = .004)</span>
-      <span class="tag">Host-city card spending ~+5%</span>
-    </div>
-    <p>Methods: synthetic difference-in-differences, a border comparison of bars just inside and outside each zone, and placebo tests. Every analysis plan was locked in before I looked at the data. Built in Python with sales, bike share, subway, card spending and ICE arrest data.</p>
-    <a class="btn" href="clean-zones-world-cup-2026.pdf">Read the working paper (PDF)</a>
-  </div>
-
-  <div class="paper">
-    <div class="kicker">Published Nov 2025 · Princeton University program · Co-author</div>
-    <h3>Inclusive or Selective? Evaluating Fintech Credit Allocation under Quantitative Tightening in Urban Low-Income and SME Communities in the U.S.: A Case Study of Upstart</h3>
-    <p>When the Fed started shrinking its balance sheet in 2022, borrowing got more expensive and lenders got pickier. We looked at whether Upstart, an AI lending platform, kept lending to small businesses and low-income borrowers anyway. It did: by selling about 65% of its loans to investors through securitization, it moved default risk off its books and kept credit flowing.</p>
-    <p class="role" style="margin:8px 0 12px"><i>Advances in Economics, Management and Political Sciences</i> 236(1): 251&ndash;259</p>
-    <a class="btn" href="https://doi.org/10.54254/2754-1169/2025.GL29588">Read the paper (DOI)</a>
-  </div>
-</section>
-
-<section id="work">
   <h2>Work</h2>
 
-  <div class="item">
-    <div class="top"><h3>Youth Economy Lab</h3><span class="when">Dec 2025 – Present</span></div>
-    <div class="role">Director of Finance and Operations</div>
-    <ul>
-      <li>Joined when the nonprofit was short on money. Cut costs and raised $30K in grants, keeping programs free for 8,000+ members in 106 countries (about 1.5M impressions).</li>
-      <li>Closed 6 partnerships and acquisitions with consulting groups, college organizations and research labs, including acquiring Talem and Empiric Investing.</li>
-    </ul>
-  </div>
+  <h3>Youth Economy Lab</h3>
+  <p class="meta">Director of Finance and Operations, Dec 2025 to now</p>
+  <p>I joined when the group was short on money. I cut costs and brought in $30K in grants, so programs stayed free for our 8,000+ members in 106 countries. I also closed 6 partnerships and acquisitions, including Talem and Empiric Investing.</p>
 
-  <div class="item">
-    <div class="top"><h3>North Shore Towers</h3><span class="when">Summer 2026</span></div>
-    <div class="role">Accounting Intern</div>
-    <ul>
-      <li>Audited and reconciled 1,844 shareholder accounts covering over $1B in property value using three-way reconciliation.</li>
-    </ul>
-  </div>
+  <h3>North Shore Towers</h3>
+  <p class="meta">Accounting Intern, Summer 2026</p>
+  <p>I audited and reconciled 1,844 shareholder accounts covering over $1B in property value.</p>
 
-  <div class="item">
-    <div class="top"><h3>Herricks High School &amp; Board of Education</h3><span class="when">Sept 2024 – Present</span></div>
-    <div class="role">Founding Investment Director &amp; Student Representative</div>
-    <ul>
-      <li>Started and manage a $100K student portfolio in capital-protected government securities, timed to mature when clubs need to draw funds; earning about 6%.</li>
-      <li>Serve as the student voice to the district; presented budget proposals for campus renovations to the Board of Education.</li>
-    </ul>
-  </div>
-</section>
+  <h3>Herricks High School &amp; Board of Education</h3>
+  <p class="meta">Founding Investment Director &amp; Student Representative, Sept 2024 to now</p>
+  <p>I started and manage a $100K student fund that can only hold government securities. I set it up so each one matures before clubs need the cash, and it's earning about 6%. I also built the budget proposal for the gym's HVAC renovation and presented it to the Board of Education.</p>
 
-<section id="projects">
-  <h2>Things I've started</h2>
+  <h2>Things I started</h2>
 
-  <div class="item">
-    <div class="top"><h3>GoofProof</h3><span class="when">June 2026 – Present</span></div>
-    <div class="role">Founder · in development</div>
-    <ul>
-      <li>Software that tests games before launch, starting with Roblox. It finds bugs, choke points and security holes, and patches small bugs on its own.</li>
-      <li>Includes a bot that plays the game like a real player to estimate player retention and show developers where players are likely to quit.</li>
-    </ul>
-  </div>
+  <h3>Long Island Visual Initiative</h3>
+  <p class="meta">Founder, Dec 2024 to now</p>
+  <p>A paid photo and video business for real estate, auto and sports clients. I handle pricing and the books, and I've trained 9 students in photography, video and editing.</p>
 
-  <div class="item">
-    <div class="top"><h3>Long Island Visual Initiative</h3><span class="when">Dec 2024 – Present</span></div>
-    <div class="role">Founder</div>
-    <ul>
-      <li>A paid photo and video business serving real estate, auto and sports clients.</li>
-      <li>I hire and pay local students as staff, find clients, set prices and track profit and loss for every job.</li>
-    </ul>
-  </div>
-</section>
+  <h3>GoofProof</h3>
+  <p class="meta">Founder, June 2026 to now</p>
+  <p>Software that tests Roblox games before they launch. It looks for bugs, choke points and security holes, and a bot plays the game like a real person to show where players quit. Still in development.</p>
 
-<section id="awards">
+  <h2>Research</h2>
+
+  <h3>&ldquo;Messi&rdquo; Business: The Effect of Clean Zones, Crowds and Closures at the 2026 World Cup</h3>
+  <p class="meta">Sole author, with Cornell University &amp; EXEA Labs. Ongoing.</p>
+  <p>FIFA had host cities set up &ldquo;Clean Zones&rdquo; that limit signs and street vendors near stadiums and fan fests. I'm checking whether those rules hurt local businesses in all 16 host cities. So far it looks like they didn't: sales near the zones held up, and crowds and spending went up. <a href="clean-zones-world-cup-2026.pdf">Working paper (PDF)</a></p>
+
+  <h3>Inclusive or Selective? Evaluating Fintech Credit Allocation under Quantitative Tightening</h3>
+  <p class="meta">Co-author. Published Nov 2025 in Advances in Economics, Management and Political Sciences.</p>
+  <p>A case study of Upstart, an AI lending platform, and how it kept lending to small businesses and low-income borrowers while the Fed was tightening. <a href="https://doi.org/10.54254/2754-1169/2025.GL29588">Read the paper</a></p>
+
   <h2>Awards</h2>
-  <ul class="awards">
-    <li><b>International Economics Olympiad, Open Track:</b> Top 5 globally (Business Case)</li>
-    <li><b>Youthpreneur Pitch Competition:</b> Grand Prize</li>
-    <li><b>U.S. National Innovator Challenge:</b> Finalist</li>
-    <li><b>Virtual Enterprise National Financial Literacy Challenge:</b> Finalist</li>
-    <li><b>&ldquo;Ready, Set, Lead!&rdquo; Business Competition:</b> Bronze (Finance)</li>
+  <ul>
+    <li>International Economics Olympiad, Open Track: top 5 in the world (business case)</li>
+    <li>Youthpreneur Pitch Competition: grand prize</li>
+    <li>U.S. National Innovator Challenge: finalist</li>
+    <li>Virtual Enterprise National Financial Literacy Challenge: finalist</li>
+    <li>&ldquo;Ready, Set, Lead!&rdquo; Business Competition: bronze (finance)</li>
   </ul>
-</section>
-
-<section id="skills">
-  <h2>Skills</h2>
-  <div class="nums">
-    <span class="tag">Python (pandas, geopandas, statsmodels)</span>
-    <span class="tag">Luau</span><span class="tag">R</span><span class="tag">Stata</span><span class="tag">QGIS</span>
-    <span class="tag">Excel</span><span class="tag">QuickBooks</span>
-    <span class="tag">Account reconciliation</span><span class="tag">Audit sampling</span><span class="tag">Budgeting</span>
-  </div>
-</section>
 </main>
 
-<footer><div class="wrap">
-  Ethan Zhao · zhaoethan1529 [at] gmail [dot] com · <a href="http://www.linkedin.com/in/ethan-zhao-89a9302ab">LinkedIn</a>
-</div></footer>
+<div class="bar"></div>
+<footer>Visca el Barça.</footer>
+
 </body>
 </html>
